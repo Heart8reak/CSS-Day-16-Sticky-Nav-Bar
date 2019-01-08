@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Day 16 | Sticky Animated Nav Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+</head>
+<body>
+   <div class="wrapper">
+       <nav>
+           <div class="logo">CLB</div>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a class="active" href="#">Markets</a></li>
+           </ul>
+       </nav>
+       <section class="sec1"></section>
+       <section class="content">
+           <p>Thank you for checking out my content in practice, we are curretnly working producing more digital media.</p>
+       </section>
+   </div>
+
+</body>
+</html>
